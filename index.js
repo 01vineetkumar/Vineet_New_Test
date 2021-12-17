@@ -16,6 +16,6 @@ dbConnection()
 const routes = require('./route/routes')
 app.use('/', routes)
 
-app.listen(port, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log(`code is running on ${port}`)
 })
